@@ -31,9 +31,10 @@ the **AI & Machine Learning Addendum** in [`LICENSE.md`](./LICENSE.md).
 
 ### Commercial licensing
 
-Any commercial or product use requires a separate written license. Reach out:
+Any commercial or product use requires a separate written license. Reach out via
+GitHub:
 
-**MadeSimple Workshop** — ghostspieces@gmail.com
+**MadeSimple Workshop** — <https://github.com/MadeSimpleWorkshop>
 
 ### Contributions
 
