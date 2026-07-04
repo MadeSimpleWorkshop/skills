@@ -129,7 +129,12 @@ restrictive, they control.
    available under a separate written agreement. Contact
    MadeSimple Workshop at <https://github.com/MadeSimpleWorkshop>.
 
-6. **Contributions.** Unless a contributor states otherwise in writing, any
+6. **No trademark or branding rights.** This license does not grant permission
+   to use the licensor's names, trademarks, logos, or branding (including
+   "MadeSimple Workshop" and any associated marks), except as required to give
+   the attribution and notices these terms call for.
+
+7. **Contributions.** Unless a contributor states otherwise in writing, any
    contribution intentionally submitted for inclusion in this repository is
    licensed to the licensor under these same terms, and the contributor grants
    the licensor a perpetual, irrevocable, worldwide right to relicense that
