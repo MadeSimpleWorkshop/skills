@@ -10,26 +10,86 @@ Cursor, GitHub Copilot, Gemini CLI**, and dozens of other AI agents.
 
 ## Install
 
-**Fastest (any coding agent, one command):**
+Pick the approach that matches how you use AI. (Full step-by-step directions
+for each are in [INSTALL.md](./INSTALL.md).)
 
-```bash
-npx skills add MadeSimpleWorkshop/skills
+### 1. Ask your AI to install it (easiest — works anywhere)
+
+Copy this whole block and paste it into your AI assistant (Claude Code, Codex,
+Cursor, Copilot, Gemini CLI, etc.):
+
+```text
+Please install the AI skills from https://github.com/MadeSimpleWorkshop/skills
+
+Do it the simplest way that works in this environment, trying in this order:
+1. If the `skills` CLI works here, run: npx skills add MadeSimpleWorkshop/skills
+   and let me pick which skills to install.
+2. If you are Claude Code and plugins are available, run:
+   /plugin marketplace add MadeSimpleWorkshop/skills
+   then: /plugin install madesimple-skills@madesimple
+3. If you are OpenAI Codex, use your skill installer on:
+   https://github.com/MadeSimpleWorkshop/skills/tree/main/skills
+4. Otherwise, clone the repo and copy the folders under skills/ into my
+   agent's skills directory (for example ~/.claude/skills/ for Claude Code
+   or ~/.agents/skills/ for Codex), keeping each folder's LICENSE.md.
+
+When you're done, list the skills that were installed and give me one
+example prompt for each. These skills are licensed PolyForm Noncommercial
+1.0.0 + no-AI-training; keep the license files with the copies.
 ```
 
-**Claude Code plugin:**
+### 2. One command in your terminal (any coding agent)
+
+Installs into Claude Code, OpenAI Codex, Cursor, Copilot, Gemini CLI, and ~40
+other agents at once — it auto-detects what you have:
+
+```bash
+npx skills add MadeSimpleWorkshop/skills                     # pick from all 6
+npx skills add MadeSimpleWorkshop/skills --list              # preview first
+npx skills add MadeSimpleWorkshop/skills -s image-upscale    # just one skill
+npx skills add MadeSimpleWorkshop/skills -g                  # all projects (global)
+```
+
+### 3. Claude Code plugin marketplace
+
+Inside Claude Code:
 
 ```
 /plugin marketplace add MadeSimpleWorkshop/skills
 /plugin install madesimple-skills@madesimple
 ```
 
-**No terminal? (claude.ai / ChatGPT):** download a skill zip from
-[Releases](https://github.com/MadeSimpleWorkshop/skills/releases) and upload it
-in the app's Skills settings.
+### 4. OpenAI Codex
 
-**Or just ask your AI to do it** — copy the ready-made prompt in
-**[INSTALL.md](./INSTALL.md)**, which also has step-by-step directions for
-every option above.
+Ask Codex to install a skill by URL, or use its skill installer:
+
+```
+$skill-installer install https://github.com/MadeSimpleWorkshop/skills/tree/main/skills/image-upscale
+```
+
+### 5. claude.ai / ChatGPT — no terminal needed
+
+1. Download the zip for the skill you want from
+   **[Releases](https://github.com/MadeSimpleWorkshop/skills/releases)**.
+2. Upload it: **claude.ai** → Settings → Capabilities → Skills;
+   **ChatGPT** → Skills → New skill → Upload.
+3. Toggle it on and just ask for what it does.
+
+### 6. Manual (git)
+
+```bash
+git clone https://github.com/MadeSimpleWorkshop/skills.git
+cp -R skills/skills/* ~/.claude/skills/    # Claude Code (all projects)
+cp -R skills/skills/* ~/.agents/skills/    # Codex / cross-agent standard
+```
+
+### Try one before installing
+
+```bash
+npx skills use MadeSimpleWorkshop/skills@sitemap-xml-generator
+```
+
+This generates a one-off prompt for a single skill without installing anything.
 
 ## The skills
 
