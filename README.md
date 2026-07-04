@@ -56,7 +56,9 @@ Inside Claude Code:
 
 ```
 /plugin marketplace add MadeSimpleWorkshop/skills
-/plugin install madesimple-skills@madesimple
+/plugin install madesimple-skills@madesimple      # everything
+/plugin install madesimple-website@madesimple     # just one category
+/plugin install madesimple-audio@madesimple
 ```
 
 ### 4. OpenAI Codex
@@ -64,7 +66,7 @@ Inside Claude Code:
 Ask Codex to install a skill by URL, or use its skill installer:
 
 ```
-$skill-installer install https://github.com/MadeSimpleWorkshop/skills/tree/main/skills/image-upscale
+$skill-installer install https://github.com/MadeSimpleWorkshop/skills/tree/main/skills/website/image-upscale
 ```
 
 ### 5. claude.ai / ChatGPT — no terminal needed
@@ -79,8 +81,9 @@ $skill-installer install https://github.com/MadeSimpleWorkshop/skills/tree/main/
 
 ```bash
 git clone https://github.com/MadeSimpleWorkshop/skills.git
-cp -R skills/skills/* ~/.claude/skills/    # Claude Code (all projects)
-cp -R skills/skills/* ~/.agents/skills/    # Codex / cross-agent standard
+# skills are grouped as skills/<category>/<skill>/ — copy the skill folders:
+find skills/skills -mindepth 2 -maxdepth 2 -type d -exec cp -R {} ~/.claude/skills/ \;   # Claude Code
+find skills/skills -mindepth 2 -maxdepth 2 -type d -exec cp -R {} ~/.agents/skills/ \;   # Codex / cross-agent
 ```
 
 ### Try one before installing
@@ -93,14 +96,35 @@ This generates a one-off prompt for a single skill without installing anything.
 
 ## The skills
 
+Skills are organized into categories. Install everything, one category, or a
+single skill — your choice.
+
+### 🌐 Website Creation — [`skills/website/`](./skills/website/)
+
 | Skill | What it does |
 |---|---|
-| [frequency-tone-generator](./skills/frequency-tone-generator/) | Generate exact-length layered frequency-tone audio (WAV) for meditation music, solfeggio tones, or YouTube audio beds |
-| [image-upscale](./skills/image-upscale/) | Upscale photos, screenshots, and artwork (2x/4x, target resolutions, batch folders) with backend selection guidance |
-| [sitemap-xml-generator](./skills/sitemap-xml-generator/) | Generate a standards-compliant sitemap.xml for Google/Bing from a local site build, plus robots.txt wiring |
-| [youtube-to-suno-prompts](./skills/youtube-to-suno-prompts/) | Turn a reference track you own into Suno prompt variants (genre/mood/instrumentation) without copying lyrics or melodies |
-| [web-builder-youtube-patreon](./skills/web-builder-youtube-patreon/) | Build and optimize websites that funnel traffic to your YouTube and Patreon |
-| [website-color-pattern-redesign](./skills/website-color-pattern-redesign/) | Audit and modernize a site's color system and visual patterns with safe, previewable rollout |
+| [web-builder-youtube-patreon](./skills/website/web-builder-youtube-patreon/) | Build and optimize websites that funnel traffic to your YouTube and Patreon |
+| [website-color-pattern-redesign](./skills/website/website-color-pattern-redesign/) | Audit and modernize a site's color system and visual patterns with safe, previewable rollout |
+| [sitemap-xml-generator](./skills/website/sitemap-xml-generator/) | Generate a standards-compliant sitemap.xml for Google/Bing from a local site build, plus robots.txt wiring |
+| [image-upscale](./skills/website/image-upscale/) | Upscale photos, screenshots, and artwork (2x/4x, target resolutions, batch folders) with backend selection guidance |
+
+### 🎵 Audio Creation — [`skills/audio/`](./skills/audio/)
+
+| Skill | What it does |
+|---|---|
+| [frequency-tone-generator](./skills/audio/frequency-tone-generator/) | Generate exact-length layered frequency-tone audio (WAV) for meditation music, solfeggio tones, or YouTube audio beds |
+| [youtube-to-suno-prompts](./skills/audio/youtube-to-suno-prompts/) | Turn a reference track you own into Suno prompt variants (genre/mood/instrumentation) without copying lyrics or melodies |
+
+### Coming soon
+
+| Category | What to expect |
+|---|---|
+| [🎬 Video Processing](./skills/video/) | Upscaling, seamless loops, text cleanup, publish prep |
+| [📈 YouTube Growth](./skills/youtube-growth/) | SEO packaging, retention research, metadata, cross-posting |
+| [🚗 Automotive Diagnostics](./skills/automotive/) | OBD scan tools, live-data analysis, per-vehicle troubleshooting |
+| [🤖 AI Productivity](./skills/ai-productivity/) | Context management and workflow tools for AI assistants |
+| [📡 IoT & LoRaWAN](./skills/iot/) | Network servers, gateways, device integration |
+| [💰 Finance & Spreadsheets](./skills/finance/) | Amortization, mortgage analysis, tax helpers |
 
 Skills activate automatically when your request matches what they do — no
 special commands to memorize.

@@ -21,9 +21,10 @@ Do it the simplest way that works in this environment, trying in this order:
    then: /plugin install madesimple-skills@madesimple
 3. If you are OpenAI Codex, use your skill installer on:
    https://github.com/MadeSimpleWorkshop/skills/tree/main/skills
-4. Otherwise, clone the repo and copy the folders under skills/ into my
-   agent's skills directory (for example ~/.claude/skills/ for Claude Code
-   or ~/.agents/skills/ for Codex), keeping each folder's LICENSE.md.
+4. Otherwise, clone the repo and copy the skill folders (grouped as
+   skills/<category>/<skill>/) into my agent's skills directory (for
+   example ~/.claude/skills/ for Claude Code or ~/.agents/skills/ for
+   Codex), keeping each folder's LICENSE.md.
 
 When you're done, list the skills that were installed and give me one
 example prompt for each. These skills are licensed PolyForm Noncommercial
@@ -53,7 +54,9 @@ Inside Claude Code:
 
 ```
 /plugin marketplace add MadeSimpleWorkshop/skills
-/plugin install madesimple-skills@madesimple
+/plugin install madesimple-skills@madesimple      # everything
+/plugin install madesimple-website@madesimple     # just the website category
+/plugin install madesimple-audio@madesimple       # just the audio category
 ```
 
 ## Option 4 — claude.ai or ChatGPT (no terminal needed)
@@ -71,10 +74,11 @@ Inside Claude Code:
 
 ```bash
 git clone https://github.com/MadeSimpleWorkshop/skills.git
+# Skills are grouped as skills/<category>/<skill>/ — copy the skill folders:
 # Claude Code (personal, all projects):
-cp -R skills/skills/* ~/.claude/skills/
+find skills/skills -mindepth 2 -maxdepth 2 -type d -exec cp -R {} ~/.claude/skills/ \;
 # OpenAI Codex / cross-agent standard location:
-cp -R skills/skills/* ~/.agents/skills/
+find skills/skills -mindepth 2 -maxdepth 2 -type d -exec cp -R {} ~/.agents/skills/ \;
 # Or per-project: copy into .claude/skills/ or .agents/skills/ in your repo
 ```
 

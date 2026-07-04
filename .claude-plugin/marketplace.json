@@ -5,16 +5,42 @@
     "url": "https://github.com/MadeSimpleWorkshop"
   },
   "metadata": {
-    "description": "MadeSimple Workshop AI skills for technical and non-technical tasks",
-    "version": "1.0.0"
+    "description": "MadeSimple Workshop AI skills for technical and non-technical tasks, organized by category",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "madesimple-skills",
       "source": "./",
-      "description": "All MadeSimple Workshop skills: frequency-tone-generator, image-upscale, sitemap-xml-generator, youtube-to-suno-prompts, web-builder-youtube-patreon, website-color-pattern-redesign.",
+      "description": "Everything — all MadeSimple Workshop skills across every category.",
       "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
-      "category": "productivity"
+      "category": "productivity",
+      "skills": [
+        "./skills/website/",
+        "./skills/audio/",
+        "./skills/video/",
+        "./skills/youtube-growth/",
+        "./skills/automotive/",
+        "./skills/ai-productivity/",
+        "./skills/iot/",
+        "./skills/finance/"
+      ]
+    },
+    {
+      "name": "madesimple-website",
+      "source": "./",
+      "description": "Website creation: landing-page builder, color-system redesign, sitemap generator, image upscaling.",
+      "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
+      "category": "web",
+      "skills": ["./skills/website/"]
+    },
+    {
+      "name": "madesimple-audio",
+      "source": "./",
+      "description": "Audio creation: frequency-tone generation and Suno prompt crafting.",
+      "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
+      "category": "media",
+      "skills": ["./skills/audio/"]
     }
   ]
 }

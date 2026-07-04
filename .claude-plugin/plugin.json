@@ -1,7 +1,7 @@
 {
   "name": "madesimple-skills",
-  "description": "MadeSimple Workshop skills: audio tone generation, image upscaling, sitemap generation, Suno prompt crafting, YouTube/Patreon site building, and website color redesign.",
-  "version": "1.0.0",
+  "description": "All MadeSimple Workshop skills: website creation, audio generation, and more categories as they launch.",
+  "version": "1.1.0",
   "author": {
     "name": "MadeSimple Workshop",
     "url": "https://github.com/MadeSimpleWorkshop"
@@ -9,5 +9,15 @@
   "homepage": "https://github.com/MadeSimpleWorkshop/skills",
   "repository": "https://github.com/MadeSimpleWorkshop/skills",
   "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
-  "keywords": ["skills", "audio", "images", "seo", "suno", "web-design"]
+  "keywords": ["skills", "website", "audio", "video", "youtube", "automotive", "iot", "finance"],
+  "skills": [
+    "./skills/website/",
+    "./skills/audio/",
+    "./skills/video/",
+    "./skills/youtube-growth/",
+    "./skills/automotive/",
+    "./skills/ai-productivity/",
+    "./skills/iot/",
+    "./skills/finance/"
+  ]
 }

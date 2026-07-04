@@ -21,14 +21,16 @@ jobs:
       - name: Build one zip per skill
         run: |
           mkdir -p dist
-          for dir in skills/*/; do
+          # Layout is skills/<bucket>/<skill>/SKILL.md
+          for dir in skills/*/*/; do
             name=$(basename "$dir")
+            bucket=$(basename "$(dirname "$dir")")
             if [ ! -f "$dir/SKILL.md" ]; then
-              echo "skipping $name (no SKILL.md)"
+              echo "skipping $bucket/$name (no SKILL.md)"
               continue
             fi
             cp -n LICENSE.md "$dir/LICENSE.md" || true
-            (cd skills && zip -r -X "../dist/${name}.zip" "$name" -x "*.DS_Store")
+            (cd "skills/$bucket" && zip -r -X "../../dist/${name}.zip" "$name" -x "*.DS_Store")
           done
           ls -l dist/
 
