@@ -1,0 +1,5 @@
+interface:
+  display_name: "Sitemap XML Generator"
+  short_description: "Generate sitemap.xml from a local website folder"
+  default_prompt: "Use $sitemap-xml-generator to scan a local static site folder and generate sitemap.xml (and optionally update robots.txt) for Google/Bing indexing."
+

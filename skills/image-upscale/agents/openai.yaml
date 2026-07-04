@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Upscale"
+  short_description: "Upscale local images with backend guidance"
+  default_prompt: "Upscale my image(s) to a target size or scale factor, choose the best local backend, and explain tradeoffs if AI super-resolution is needed."
