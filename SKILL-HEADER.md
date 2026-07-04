@@ -16,7 +16,7 @@ so it stays invisible when the Markdown is rendered but is preserved on copy.
   Licensed under PolyForm Noncommercial License 1.0.0 + AI/ML Addendum.
   Noncommercial use only. NOT for training/fine-tuning AI/ML models.
   Full terms: https://github.com/MadeSimpleWorkshop/skills/blob/main/LICENSE.md
-  Commercial license: ghostspieces@gmail.com
+  Commercial license: https://github.com/MadeSimpleWorkshop
 -->
 ```
 
@@ -41,7 +41,7 @@ copyright: © 2026 MadeSimple Workshop
 ## One-line minimal notice (for non-Markdown / code files)
 
 ```text
-Copyright © 2026 MadeSimple Workshop — PolyForm Noncommercial 1.0.0 + no-AI-training. Commercial: ghostspieces@gmail.com
+Copyright © 2026 MadeSimple Workshop — PolyForm Noncommercial 1.0.0 + no-AI-training. Commercial: https://github.com/MadeSimpleWorkshop
 ```
 
 Use `#` for shell/YAML, `//` for JS/TS, `<!-- -->` for HTML/XML, etc.

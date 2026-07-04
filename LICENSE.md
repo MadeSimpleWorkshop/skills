@@ -14,8 +14,8 @@ further subject to the **AI & Machine Learning Addendum** that follows it.
 
 For a commercial license — including any use in, or as part of, a product,
 service, or offering that is primarily intended for or directed toward
-commercial advantage or monetary compensation — contact:
-**MadeSimple Workshop** <ghostspieces@gmail.com>.
+commercial advantage or monetary compensation — contact
+**MadeSimple Workshop** at <https://github.com/MadeSimpleWorkshop>.
 
 ---
 
@@ -127,7 +127,7 @@ restrictive, they control.
 5. **Commercial licensing.** Rights that this license does not grant —
    including any commercial use and any use excluded by this Addendum — may be
    available under a separate written agreement. Contact
-   MadeSimple Workshop <ghostspieces@gmail.com>.
+   MadeSimple Workshop at <https://github.com/MadeSimpleWorkshop>.
 
 6. **Contributions.** Unless a contributor states otherwise in writing, any
    contribution intentionally submitted for inclusion in this repository is
