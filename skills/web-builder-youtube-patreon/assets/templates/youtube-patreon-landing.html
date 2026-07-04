@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Hub | Watch and Support</title>
+  <meta name="description" content="Watch free tutorials on YouTube and unlock bonus content on Patreon.">
+  <meta property="og:title" content="Creator Hub | Watch and Support">
+  <meta property="og:description" content="Watch free tutorials on YouTube and unlock bonus content on Patreon.">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --youtube: #e11d48;
+      --patreon: #0f766e;
+      --accent: #0ea5e9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top right, #dbeafe 0%, var(--bg) 45%);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .hero {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.1;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 65ch;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.5rem 0 0;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .btn-youtube {
+      background: var(--youtube);
+    }
+
+    .btn-patreon {
+      background: var(--patreon);
+    }
+
+    .section {
+      margin-top: 1.5rem;
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.5rem;
+      box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .proof {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 0.9rem;
+      background: #f8fafc;
+    }
+
+    .email {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 0.9rem;
+    }
+
+    .email input {
+      flex: 1 1 220px;
+      min-height: 42px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 0.6rem 0.7rem;
+    }
+
+    .email button {
+      min-height: 42px;
+      border: none;
+      border-radius: 10px;
+      padding: 0.6rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Build faster with free videos, then go deeper with supporter-only guides.</h1>
+      <p>Start with practical tutorials on YouTube. Join Patreon for templates, behind-the-scenes workflows, and member Q&A.</p>
+      <div class="cta-row">
+        <a class="btn btn-youtube" href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener">Watch on YouTube</a>
+        <a class="btn btn-patreon" href="https://www.patreon.com/yourpage" target="_blank" rel="noopener">Join on Patreon</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What you get</h2>
+      <div class="proof-grid">
+        <article class="proof">
+          <h3>Free YouTube Library</h3>
+          <p>Hands-on tutorials and weekly uploads to build consistent skills.</p>
+        </article>
+        <article class="proof">
+          <h3>Patreon Bonus Content</h3>
+          <p>Project files, deeper breakdowns, and member-only walkthroughs.</p>
+        </article>
+        <article class="proof">
+          <h3>Community Support</h3>
+          <p>Feedback, prioritization polls, and direct supporter updates.</p>
+        </article>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-youtube" href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener">Start with YouTube</a>
+        <a class="btn btn-patreon" href="https://www.patreon.com/yourpage" target="_blank" rel="noopener">Unlock Patreon Extras</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Get update alerts</h2>
+      <p>Get notified when new tutorials or member resources are released.</p>
+      <form class="email">
+        <input type="email" name="email" placeholder="you@example.com" aria-label="Email address">
+        <button type="submit">Notify Me</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

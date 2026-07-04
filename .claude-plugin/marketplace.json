@@ -1,0 +1,20 @@
+{
+  "name": "madesimple",
+  "owner": {
+    "name": "MadeSimple Workshop",
+    "url": "https://github.com/MadeSimpleWorkshop"
+  },
+  "metadata": {
+    "description": "MadeSimple Workshop AI skills for technical and non-technical tasks",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "madesimple-skills",
+      "source": "./",
+      "description": "All MadeSimple Workshop skills: frequency-tone-generator, image-upscale, sitemap-xml-generator, youtube-to-suno-prompts, web-builder-youtube-patreon, website-color-pattern-redesign.",
+      "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
+      "category": "productivity"
+    }
+  ]
+}

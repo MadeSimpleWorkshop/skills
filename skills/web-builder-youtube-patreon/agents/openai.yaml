@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Builder YouTube Patreon"
+  short_description: "Build websites that funnel traffic to YouTube and Patreon."
+  default_prompt: "Review local HTML, confirm live-site behavior, and recommend conversion-focused improvements for YouTube and Patreon traffic."

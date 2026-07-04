@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Color Pattern Redesign"
+  short_description: "Review website colors, preview redesigns, and apply updates."
+  default_prompt: "Review an existing website, suggest modern color and pattern updates, generate a preview variant, and apply approved updates safely."

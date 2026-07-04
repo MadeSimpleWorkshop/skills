@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube to Suno Prompts"
+  short_description: "Generate Suno prompts from YouTube audio"
+  default_prompt: "Use $youtube-to-suno-prompts to turn a YouTube URL into 10 Suno prompts plus a vibe profile."
