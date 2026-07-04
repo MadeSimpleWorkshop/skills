@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frequency Tone Generator"
+  short_description: "Layer frequency tones at exact durations"
+  default_prompt: "Generate a layered frequency-tone WAV from my frequency list and target duration. Keep exact timing, avoid clipping, and use clean fades."

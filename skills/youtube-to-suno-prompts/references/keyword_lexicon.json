@@ -1,0 +1,65 @@
+{
+  "genres": {
+    "ambient": ["ambient", "space ambient"],
+    "celtic": ["celtic"],
+    "folk": ["folk", "traditional"],
+    "lofi hip hop": ["lofi", "lo-fi", "chillhop", "chill hop"],
+    "chill electronic": ["downtempo", "electronica", "chill electronic"],
+    "synthwave": ["synthwave", "retrowave", "outrun"],
+    "cinematic": ["cinematic", "score", "soundtrack", "trailer"],
+    "house": ["house", "deep house", "progressive house"],
+    "drum and bass": ["dnb", "drum and bass", "drum & bass"],
+    "trap": ["trap"],
+    "hip hop": ["hip hop", "hip-hop"],
+    "rock": ["rock"],
+    "metal": ["metal"],
+    "jazz": ["jazz"],
+    "classical": ["classical", "orchestral", "symphony"]
+  },
+  "moods": {
+    "dreamy": ["dreamy", "ethereal"],
+    "dark": ["dark", "ominous"],
+    "uplifting": ["uplifting", "hopeful"],
+    "melancholic": ["sad", "melancholy", "melancholic"],
+    "relaxed": ["relaxing", "relaxed", "calm"],
+    "energetic": ["energetic", "high energy", "hype"],
+    "nostalgic": ["nostalgic", "retro"],
+    "mysterious": ["mysterious", "mystical", "witchy", "pagan", "magical", "occult", "ritual"]
+  },
+  "instruments": {
+    "piano": ["piano", "keys"],
+    "acoustic guitar": ["acoustic guitar"],
+    "electric guitar": ["electric guitar", "guitar riff"],
+    "celtic harp": ["celtic harp", "harp"],
+    "tin whistle": ["tin whistle", "whistle"],
+    "fiddle": ["fiddle", "violin"],
+    "bodhran": ["bodhran", "frame drum"],
+    "handpan": ["handpan"],
+    "drones": ["drone", "drones"],
+    "synth pads": ["pad", "pads", "synth pad"],
+    "arpeggiated synth": ["arp", "arpeggio", "arpeggiated"],
+    "strings": ["strings", "violin", "cello"],
+    "flute": ["flute"],
+    "808 bass": ["808"],
+    "sub bass": ["sub bass", "subbass"],
+    "breakbeats": ["breakbeat", "breakbeats"],
+    "trap drums": ["trap drums"],
+    "live drums": ["live drums", "drum kit"]
+  },
+  "vocal_styles": {
+    "instrumental": ["instrumental", "no vocals"],
+    "male vocals": ["male vocals", "male vocal", "male singer"],
+    "female vocals": ["female vocals", "female vocal", "female singer"],
+    "vocal chops": ["vocal chops", "chops"],
+    "choir": ["choir", "choral"]
+  },
+  "production": {
+    "warm tape": ["tape", "cassette", "vinyl", "warm"],
+    "wide reverb": ["reverb", "hall", "cathedral"],
+    "crunchy distortion": ["distortion", "grit", "crunchy"],
+    "sidechain pump": ["sidechain", "pumping"],
+    "modern polished": ["polished", "clean mix", "modern"],
+    "lofi texture": ["lofi", "lo-fi", "noise", "crackle"],
+    "ritual ambience": ["ritual", "ceremony", "pagan", "forest", "woods", "moonlit", "incense"]
+  }
+}
