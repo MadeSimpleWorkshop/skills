@@ -1,0 +1,4 @@
+interface:
+  display_name: "Camtasia YouTube Timestamps"
+  short_description: "Parse Camtasia XMP/XML markers into YouTube chapter timestamps"
+  default_prompt: "Parse this Camtasia XML/XMP marker file and output YouTube-ready chapter timestamps for the video description."

@@ -41,6 +41,14 @@
       "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
       "category": "media",
       "skills": ["./skills/audio/"]
+    },
+    {
+      "name": "madesimple-video",
+      "source": "./",
+      "description": "Video processing: ffmpeg upscaling, seamless loops, text-overlay cleanup, Camtasia chapter timestamps, and pre-upload YouTube QC.",
+      "license": "PolyForm-Noncommercial-1.0.0 AND LicenseRef-No-AI-Training",
+      "category": "media",
+      "skills": ["./skills/video/"]
     }
   ]
 }

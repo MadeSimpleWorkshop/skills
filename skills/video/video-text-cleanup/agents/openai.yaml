@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Text Cleanup"
+  short_description: "Remove burned-in captions and lower-thirds from your own videos"
+  default_prompt: "Clean up user-owned video by removing burned-in subtitles or lower-thirds while preserving quality; refuse watermark/logo removal."

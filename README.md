@@ -115,11 +115,20 @@ single skill — your choice.
 | [frequency-tone-generator](./skills/audio/frequency-tone-generator/) | Generate exact-length layered frequency-tone audio (WAV) for meditation music, solfeggio tones, or YouTube audio beds |
 | [youtube-to-suno-prompts](./skills/audio/youtube-to-suno-prompts/) | Turn a reference track you own into Suno prompt variants (genre/mood/instrumentation) without copying lyrics or melodies |
 
+### 🎬 Video Processing — [`skills/video/`](./skills/video/)
+
+| Skill | What it does |
+|---|---|
+| [ffmpeg-video-upscale](./skills/video/ffmpeg-video-upscale/) | Upscale and process local videos with ffmpeg (1080p→4K/8K, audio removal, clip joins) |
+| [seamless-video-loop](./skills/video/seamless-video-loop/) | Create seamlessly loopable videos by crossfading clip boundaries and blending the end back into the start |
+| [video-text-cleanup](./skills/video/video-text-cleanup/) | Remove burned-in text overlays (subtitles, timestamps, lower-thirds) from videos you own |
+| [camtasia-youtube-timestamps](./skills/video/camtasia-youtube-timestamps/) | Turn Camtasia marker exports into YouTube chapter timestamps for your description |
+| [youtube-export-qc](./skills/video/youtube-export-qc/) | Pre-upload QC checks for YouTube exports — resolution, frame rate, codec, bitrate, audio |
+
 ### Coming soon
 
 | Category | What to expect |
 |---|---|
-| [🎬 Video Processing](./skills/video/) | Upscaling, seamless loops, text cleanup, publish prep |
 | [📈 YouTube Growth](./skills/youtube-growth/) | SEO packaging, retention research, metadata, cross-posting |
 | [🚗 Automotive Diagnostics](./skills/automotive/) | OBD scan tools, live-data analysis, per-vehicle troubleshooting |
 | [🤖 AI Productivity](./skills/ai-productivity/) | Context management and workflow tools for AI assistants |

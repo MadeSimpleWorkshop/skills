@@ -1,0 +1,4 @@
+interface:
+  display_name: "FFmpeg Video Upscale"
+  short_description: "Upscale and export videos with ffmpeg-full"
+  default_prompt: "Use ffmpeg-full to upscale videos, remove audio, and create non-loop seamless joins between clips."

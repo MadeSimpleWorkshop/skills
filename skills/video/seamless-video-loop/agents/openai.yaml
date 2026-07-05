@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seamless Video Loop"
+  short_description: "Create loopable seamless video joins with ffmpeg"
+  default_prompt: "Use ffmpeg-full to join clips with end-to-start crossfades and export loopable videos."

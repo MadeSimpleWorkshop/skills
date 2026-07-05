@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Export QC"
+  short_description: "Pre-upload ffprobe and ffmpeg quality checks"
+  default_prompt: "Run pre-upload quality checks on video exports using ffprobe metadata checks and ffmpeg black/silence detection, then report pass, warn, or fail."
